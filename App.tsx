@@ -1,21 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import TextBold from './src/Text';
+import { StatusBar, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+
+import Cesta from './src/Cesta';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <TextBold informText={'TextNathan'}/>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView >
+      <StatusBar />
+      <Cesta/>
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'blue', 
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
