@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import TextBold from './src/Text';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Teste apoihdaiundai</Text>
+      <TextBold informText={'TextNathan'}/>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,7 +14,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red', 
+    backgroundColor: 'blue', 
     alignItems: 'center',
     justifyContent: 'center',
   },
