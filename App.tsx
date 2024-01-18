@@ -1,5 +1,6 @@
-import { StatusBar, SafeAreaView, StyleSheet, Text, View } from "react-native";
-import Cesta from "./src/Cesta";
+import { StatusBar, SafeAreaView, View } from "react-native";
+import Cesta from "./src/screen/Cesta";
+import mock from "./src/mocks/cesta";
 import {
   useFonts,
   Montserrat_400Regular,
@@ -13,13 +14,13 @@ export default function App() {
   });
 
   if (!fontLoading) {
-      return <View />;
+    return <View />;
   }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar />
-      <Cesta />
+      <Cesta {...mock} />
     </SafeAreaView>
   );
 }
